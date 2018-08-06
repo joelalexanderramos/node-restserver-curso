@@ -1,22 +1,13 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
-<<<<<<< HEAD
-=======
+
 const jwt = require('jsonwebtoken');
 
->>>>>>> a9db17bf40d4fb3054b06d687f939de587417b5d
 const Usuario = require('../models/usuario');
 
 const app = express();
 
 app.post('/login', (req, res) => {
-
-<<<<<<< HEAD
-    res.json({
-        ok: true
-    })
-
-=======
     let body = req.body;
 
     Usuario.findOne({ email: body.email }, (err, usuarioDB) => {
@@ -59,9 +50,7 @@ app.post('/login', (req, res) => {
         });
 
 
-
     });
->>>>>>> a9db17bf40d4fb3054b06d687f939de587417b5d
 
 })
 
